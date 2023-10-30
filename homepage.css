@@ -87,14 +87,22 @@
 
 .section .slidelist > li > a{
     display: block;
-    position: relation;
-    background: linear-gradient(45deg, black, #fff);
+    position: relative;
+    background: linear-gradient(45deg, #000, #000);
 }
 
 .section .slidelist > li > a img{
     width: 1500px;
     height: 800px;
     background-size: contain;
+    opacity: 1;
+}
+
+.section .slidelist > li > a img:hover{
+    width: 1500px;
+    height: 800px;
+    background-size: contain;
+    opacity: 0.7;
 }
 
 .section .slidelist label {
