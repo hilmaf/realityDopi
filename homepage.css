@@ -7,4 +7,112 @@
     color: black;
 }
 
+.header{
+    display: flex;
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+}
 
+.logo{
+    display: flex;
+    width: 150px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.logo a {
+    margin: 50px;
+    line-height: 80px;
+    font-family: 'Noto Sans KR ExtraBold';
+    font-size: 25px;
+}
+.nav{
+    display: flex;
+    width: 900px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.nav ul{
+    display: flex;
+    line-height: 80px;
+    font-family: 'Noto Sans KR Medium';
+}
+
+.nav li{
+    margin-left: 27px;
+}
+
+.searchArea{
+    display: flex;
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+}
+
+.searchArea input[type="search"]{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+}
+
+.searchArea input[type="search"]::placeholder{
+    margin-left: 100px;
+}
+
+.searchArea input[type="button"]{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 40px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.intro{
+    display: flex;
+    width: 1400px;
+    height: 60px;
+    line-height: 60px;
+    margin: auto;
+    text-align: center;
+    background-color: maroon;
+}
+
+.body{
+    width: 1400px;
+    height: 330px;
+    margin: auto;
+}
+
+#collection {
+    width: 1400px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Noto Sans KR Medium';
+    background-color: darkmagenta;
+}
+
+
+.Boardr1{
+    display: flex;
+    margin: auto;
+}
+
+.Boardr1 .each{
+    display: flex;
+    width: 240px;
+    height: 300px;
+    margin: 8px;
+    background-color: darkseagreen;
+}
