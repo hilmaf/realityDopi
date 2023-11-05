@@ -27,6 +27,7 @@
     font-family: 'Noto Sans KR ExtraBold';
     font-size: 25px;
 }
+
 .nav{
     display: flex;
     width: 700px;
@@ -77,223 +78,106 @@
     color: white;
 }
 
-.main{
+.body {
     width: 1200px;
+    height: 1200px;
     margin: auto;
-    display: block;
-    justify-content: center;
 }
-
-.collection{
-    width: 1200px;
-    height: 340px;
-    margin: auto;
-
-    background-color: lightcoral;
-}
-
-#collectionName {
-    width: 1200px;
-    height: 40px;
-    line-height: 40px;
-    margin: auto;
-    font-size: 18px;
-    font-family: 'Noto Sans KR Medium';
-    background-color: darkmagenta;
-}
-
-
-.collection1{
-    display: flex;
-}
-
-.collection1 .direction {
-    display: flex;
-    width: 30px;
-    background-color: darkslateblue;
-}
-
-.collection1 .start{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    width: 220px;
-    height: 300px;
-    background-color: darkseagreen;
-}
-
-.collection1 .start a {
-    display: block;
+.main {
     width: 100%;
-    height: 100%;
-}
-
-.collection1 .start img{
-    position: absolute;
-    display: block;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.collection1 .end{
-    position: relative;
-    display: flex;
-    width: 220px;
-    height: 300px;
-    margin-left: 10px;
-    background-color: darkseagreen;
-}
-
-.collection1 .mid{
-    position: relative;
-    display: flex;
-    width: 220px;
-    height: 300px;
-    margin-left: 10px;
-    background-color: darkseagreen;
-}
-
-
-.collection1 .mid img{
-    position: absolute;
-    display: flex;
-    z-index: 5;
-    width: 220px;
-    height: 300px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.collection1 .end img {
-    position: absolute;
-    display: flex;
-    width: 220px;
-    height: 300px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-
-.title{
-    position: absolute;
-    z-index: 5;
-    display: block;
-    width: 100%;
-    height: 100%;
-    opacity:0;
-    background-color: black;
-}
-
-.title:hover{
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    background: linear-gradient(to-bottom, white, black);
-    background-color: black;
+    height: 500px;
     border-radius: 10px;
-}
-
-.title:hover span{
-    position: absolute;
-    margin-top: 210px;
-    margin-left: 15px;
-    opacity: 1.0;
-    color: rgba(255, 255, 255, 1.0);
-    font-size: 20px;
-    font-family: 'Noto Sans KR Medium';
-}
-
-.collection2{
-    display: flex;
-}
-
-.collection2 .direction {
-    display: flex;
-    width: 30px;
-    background-color: darkslateblue;
-}
-
-.collection2 .start{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    width: 220px;
-    height: 300px;
-    background-color: darkseagreen;
-}
-
-.collection2 .start a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.collection2 .start img{
-    position: absolute;
-    display: block;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.collection2 .end{
-    position: relative;
-    display: flex;
-    width: 220px;
-    height: 300px;
-    margin-left: 10px;
-    background-color: darkseagreen;
-}
-
-.collection2 .mid{
-    position: relative;
-    display: flex;
-    width: 220px;
-    height: 300px;
-    margin-left: 10px;
-    background-color: darkseagreen;
-}
-
-
-.collection2 .mid img{
-    position: absolute;
-    display: flex;
-    z-index: 5;
-    width: 220px;
-    height: 300px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.collection2 .end img {
-    position: absolute;
-    display: flex;
-    z-index: 5;
-    width: 220px;
-    height: 300px;
-    object-fit:cover;
-    border-radius:10px;
-}
-
-.intro{
-    position: absolute;
-    width: 1200px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: maroon;
-    
+    background-color: whitesmoke;
 }
 
-#intro {
+.introArea {
+    width: 35%;
+    height: 90%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Noto Sans KR';
-    font-size: 24px;
+}
+
+.introArea #logo{
+    font-family: 'Noto Sans KR ExtraBold';
+    font-size: 25px;
+}
+
+.introArea #line{
+    font-size: 18px;
+}
+
+.postArea {
+    width: 58%;
+    height: 90%;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 50px;
+    width: 95%;
+    height: 98%;
+}
+
+#quickpost {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.category{
+    width: 90%;
+    height: 40px;
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.category button{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 5px;
+    background-color: white;
+}
+
+#title {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 550px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#content {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 551px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#postBtn {
+    margin-left: 20px;
+    width: 10%;
+}
+
+.collection_slider{
+    width: 1200px;
+    height: 390px;
+    background-color: lightseagreen;
 }
