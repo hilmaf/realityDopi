@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./homepage.css">
+    <script defer src="./homepage.js"></script>
     <title>DOPI :: 재미추구자의 현생도피 기록</title>
 </head>
 <body>
@@ -21,122 +22,119 @@
             </ul>
         </div>
         <div class="searchArea">
-            <input type="search" placeholder="Search">
-            <input type="button" value="검색">
+            <input type="search">
+            <button type="search">검색</button>
         </div>
     </div>
     
     <div class="body">
         <div class="main">
             <div class="introArea">
+                <div class="introBox">
                 <p>
-                    <div id="logo">DOPI</div>
-                    <div id="line">재미추구자의 현생 도피 기록</div><br>
-
-                    내 인생을 더 재미 있게 만들어준,<br>
-                    죽을 때까지 떠들 취미를 기록하는 공간
                 </p>
-            </div>
-            <div class="postArea">
-                <div class="post">
-                <div id="quickpost">QUICK POST</div>
-                <div class="category">
-                    <button>영화</button>
-                    <button>시리즈</button>
-                    <button>만화</button>
-                    <button>게임</button>
-                    <button>관심사</button>
-                    <div id="subCategory">
-                    </div>
-                </div>
-                <div><input id="title" type="text"></div>
-                <textarea id="content" rows="10"></textarea>
-                <button id="postBtn" type="submit">POST</button>
                 </div>
             </div>
         </div>
 
-
         <div class="collection_wrap">
-            <div id="collectionName"># 고이다 못해 썩은 물</div>
-            <div class="collection_slider">
-                <ul class="slider">
-                    <li>
-                        <div class="start" id="sundeok">
-                            <a href="#">
-                            <img src="./sundeok.webp">
-                            <div class="title"><span>선덕여왕</span></div>
-                            </a>
-                        </div>
-        
-                        <div class="mid" id="got">
-                            <a href="#">
-                            <img src="./gameofthrones.jpg">
-                            <div class="title"><span>왕좌의 게임</span></div>
-                            </a>
-                        </div>
-        
-                        <div class="mid" id="asdal">
-                            <a href="#">
-                            <img src="./asdal.jpg">
-                            <div class="title"><span>아스달 연대기</span></div>
-                            </a>   
-                        </div>
-        
-                        <div class="mid" id="ac">
-                            <a href="#">
-                            <img src="./ac.jpg">
-                            <div class="title"><span>어쌔신 크리드</span></div>
-                            </a>
-                        </div>
-        
-                        <div class="end" id="sixdragons">
-                            <a href="#">
-                            <img src="./sixdragons.webp">
-                            <div class="title"><span>육룡이 나르샤</span></div>
-                            </a>
-                        </div>          
-                    </li>
-                    <li>
-                        <div class="start" id="arcane">
-                            <a href="#">
-                            <img src="./arcane.jpg">
-                            <div class="title"><span>아케인</span></div>
-                            </a>
-                        </div>
-                        <div class="mid" id="mononokehime">
-                            <a href="#">
-                            <img src="./mononokehime.webp">
-                            <div class="title"><span>원령공주</span></div>
-                            </a>
-                        </div>
-                        <div class="mid" id="lor">
-                            <a href="#">
-                            <img src="./lor.jpg">
-                            <div class="title"><span>반지의 제왕</span></div>
-                            </a>
-                        </div>
-                        <div class="mid" id="ts">
-                            <a href="#">
-                            <img src="./ts.jpg">
-                            <div class="title"><span>테일러 스위프트</span></div>
-                            </a>
-                        </div>
-                        <div class="end" id="hozedawn">
-                            <a href="#">
-                            <img src="./hozedawn.webp">
-                            <div class="title"><span>호라이즌 제로 던</span></div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+            <div id="collectionName">
+                <span># 명예의 전당</span>
+                <button type="button" onclick="moveleft();" id="firstslide">1</button>
+                <button type="button" onclick="moveright();" id="secondslide">2</button>
+            </div>
+            <div class="container">
+                <div class="inner">
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./sundeok.webp">
+                        <span class="title">선덕여왕</span>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./gameofthrones.jpg">
+                        <div class="title"><span>왕좌의 게임</span></div>
+                        </a>
+                    </div>
+    
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./asdal.jpg">
+                        <div class="title"><span>아스달 연대기</span></div>
+                        </a>   
+                    </div>
+    
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./ac.jpg">
+                        <div class="title"><span>어쌔신 크리드</span></div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./dickinson.jpg">
+                        <div class="title"><span>디킨슨</span></div>
+                        </a>
+                    </div>
+
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./arcane.jpg">
+                        <div class="title"><span>아케인</span></div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./mononokehime.webp">
+                        <div class="title"><span>원령공주</span></div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./lor.jpg">
+                        <div class="title"><span>반지의 제왕</span></div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./shera.jpg">
+                        <div class="title"><span>쉬라</span></div>
+                        </a>
+                    </div>
+                    <div class="poster">
+                        <a href="#">
+                        <img src="./hozedawn.webp">
+                        <div class="title"><span>호라이즌 제로 던</span></div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     
     <div class="footer">
-        
+        <div class="postArea">
+            <div class="post">
+            <select class="category">
+                <option class="check">카테고리</option>
+                <option class="check">영화</option>
+                <option class="check">시리즈</option>
+                <option class="check">만화</option>
+                <option class="check">게임</option>
+                <option class="check">관심사</option>
+            </select>
+            <div><input id="title" type="text"></div>
+            <textarea id="content" rows="10"></textarea>
+            <button id="postBtn" onclick="f01();" type="submit">POST</button>
+            <div id="nope">
+            </div>
+            </div>
+        </div>
+        <div class="explainArea">
+            
+        </div>
     </div>
 </body>
 </html>

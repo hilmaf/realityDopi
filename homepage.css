@@ -9,9 +9,11 @@
 
 .header{
     display: flex;
-    width: 1200px;
+    width: 100vw;
     height: 80px;
-    margin: 0 auto;
+    margin: auto;
+    justify-content: center;
+    background-color: whitesmoke;
 }
 
 .logo{
@@ -30,7 +32,7 @@
 
 .nav{
     display: flex;
-    width: 700px;
+    width: 80%;
     height: 80px;
     border-radius: 20px;
 }
@@ -47,30 +49,29 @@
 
 .searchArea{
     display: flex;
-    width: 350px;
+    width: 30%;
     height: 80px;
     border-radius: 20px;
 }
 
-.searchArea input[type="search"]{
+.searchArea input[type=search]{
     display: flex;
     margin-top: 25px;
     margin-left: 20px;
     width: 250px;
     height: 30px;
-    border: 1px solid darkgray;
+    border: 0.5px solid rgb(185, 178, 178);
     border-radius: 20px;
+    background-color: whitesmoke;
 }
 
-.searchArea input[type="search"]::placeholder{
-    margin-left: 100px;
-}
-
-.searchArea input[type="button"]{
+.searchArea button{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 25px;
     margin-left: 10px;
-    width: 40px;
+    width: 44px;
     height: 30px;
     border: 1px solid black;
     border-radius: 20px;
@@ -79,78 +80,171 @@
 }
 
 .body {
-    width: 1200px;
-    height: 1200px;
-    margin: auto;
-}
-.main {
-    width: 100%;
-    height: 500px;
-    border-radius: 10px;
+    width: 100vw;
+    height: 800px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;;
+    flex-direction: column;
     background-color: whitesmoke;
 }
 
+.main {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    align-items: center;
+    background-image: url(./thehalfofit.jpg);
+    object-fit: cover;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
 .introArea {
-    width: 35%;
+    position: absolute;
+    width: 500px;
     height: 90%;
-    margin-left: 30px;
+    margin-left: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     font-family: 'Noto Sans KR';
 }
 
-.introArea #logo{
-    font-family: 'Noto Sans KR ExtraBold';
-    font-size: 25px;
+.introBox {
+    width: 40%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
 }
 
-.introArea #line{
-    font-size: 18px;
+.introArea #line2 {
+    color: black;
+    margin-left: 17px;
+    font-family: 'Noto Sans KR';
 }
+
+.collection_wrap{
+    width: 1200px;
+    height: 390px;
+    margin: 0 auto;
+}
+
+#collectionName {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: 'Noto Sans KR Medium';
+    line-height: 60px;
+    align-items: center;
+}
+
+#collectionName span {
+    width: 120px;
+    margin-left: 7px;
+}
+
+.container{
+   width: 2400px; 
+   height: 390px;
+   display: flex;
+   flex-direction: row;
+   transition: transform 0.5s;
+}
+
+.inner {
+    width: 1170px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+}
+
+.poster{
+    width: 235px;
+    height: 330px;
+    margin-left: 5px;
+}
+
+.poster img{
+    width: 230px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.poster span{
+    font-family: 'Noto Sans KR Medium';
+}
+
+#firstslide, #secondslide{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: whitesmoke;
+}
+
+.footer {
+    width: 100vw;
+    height: 600px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
 
 .postArea {
-    width: 58%;
+    margin-left: 80px;
+    width: 60%;
     height: 90%;
 }
+
+.explainArea {
+    width: 40%;
+    height: 90%;
+}
+
 
 .post{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: auto;
     margin-left: 50px;
     width: 95%;
     height: 98%;
 }
 
-#quickpost {
-    width: 100%;
-    height: 40px;
-    margin-top: 40px;
-    margin-left: 20px;
-    font-family: 'Noto Sans KR Medium';
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
-
 .category{
-    width: 90%;
-    height: 40px;
+    width: 10%;
+    height: 30px;
     margin-left: 20px;
     line-height: 40px;
 }
 
 .category button{
-    width: 50px;
-    height: 30px;
+    width: 60px;
+    height: 33px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-left: 5px;
     background-color: white;
+}
+
+#subCategory {
+    width: 90%;
+    height: 40px;
+    margin-left: 20px;
+    line-height: 40px;
 }
 
 #title {
@@ -174,10 +268,4 @@
 #postBtn {
     margin-left: 20px;
     width: 10%;
-}
-
-.collection_slider{
-    width: 1200px;
-    height: 390px;
-    background-color: lightseagreen;
 }
