@@ -81,7 +81,7 @@
 
 .body {
     width: 100vw;
-    height: 800px;
+    height: 900px;
     display: flex;
     align-items: center;
     justify-content: center;;
@@ -91,13 +91,14 @@
 
 .main {
     width: 100%;
-    height: 500px;
+    height: 1000px;
     position: relative;
     align-items: center;
-    background-image: url(./thehalfofit.jpg);
+    background-image: url(./mainimg.jpg_large);
     object-fit: cover;
-    background-position: 50% 50%;
+    background-position: 50% 100%;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .introArea {
@@ -141,15 +142,16 @@
     font-family: 'Noto Sans KR Medium';
     line-height: 60px;
     align-items: center;
+    margin-top: 50px;
 }
 
 #collectionName span {
-    width: 120px;
+    width: 180px;
     margin-left: 7px;
 }
 
 .container{
-   width: 2400px; 
+   width: 1200px; 
    height: 390px;
    display: flex;
    flex-direction: row;
@@ -199,18 +201,30 @@
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 
 
 .postArea {
-    margin-left: 80px;
+    margin-left: 100px;
     width: 60%;
     height: 90%;
 }
 
-.explainArea {
+.urlArea {
     width: 40%;
     height: 90%;
+}
+
+.link {
+    width: 60%;
+    height: 20%;
+    margin-top: 200px;
+    margin-left: 60px;
+    font-family: 'Noto Sans KR';
+    display: flex;
+    justify-content: felx-start;
+    text-align:end;
 }
 
 
@@ -238,6 +252,7 @@
     border-radius: 15px;
     margin-left: 5px;
     background-color: white;
+    background-color: whitesmoke;
 }
 
 #subCategory {
@@ -254,6 +269,7 @@
     height: 25px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 #content {
@@ -263,9 +279,16 @@
     height: 200px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 #postBtn {
+    margin-top: 20px;
     margin-left: 20px;
     width: 10%;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: black;
+    color: whitesmoke
 }
